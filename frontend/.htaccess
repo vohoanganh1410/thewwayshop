@@ -1,0 +1,34 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule chi-tiet-san-pham/(.*)/([0-9]+) index.php?controller=product&action=detail&id=$2
+RewriteRule gio-hang-cua-ban index.php?controller=cart&action=index
+RewriteRule ao-khoac index.php?controller=home&action=timkiemaokhoac
+RewriteRule gia-be-hon-500 index.php?controller=home&action=giabe500
+RewriteRule tren-mot-trieu index.php?controller=home&action=giatren1trieu
+RewriteRule gia-tu-500-den-1trieu index.php?controller=home&action=giatu500den1tr
+RewriteRule quan-jean index.php?controller=home&action=timkiemquanjean
+RewriteRule ao-so-mi index.php?controller=home&action=timkiemaosomi
+RewriteRule thanh-toan index.php?controller=cart&action=payment
+RewriteRule lien-he index.php?controller=contact&action=lienhe
+RewriteRule them-gio-hang/([0-9]+) index.php?controller=cart&action=add&id=$1
+RewriteRule xoa-san-pham/([0-9]+) index.php?controller=cart&action=delete&id=$1
+
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#trang chi tiết sản phẩm, vd: chi-tiet-san-pham/note-9/4
+RewriteRule san-pham/(.*)/([0-9]+) index.php?controller=product&action=detail&id=$2
+RewriteRule gio-hang-cua-ban index.php?controller=cart&action=index
+RewriteRule thanh-toan index.php?controller=cart&action=payment
+RewriteRule them-gio-hang/([0-9]+) index.php?controller=cart&action=add&id=$1
+RewriteRule xoa-san-pham/([0-9]+) index.php?controller=cart&action=delete&id=$1
+RewriteRule home-the-way-shop/([0-9]+) index.php?controller=home&action=index
+
+
+
+
+
+
+
